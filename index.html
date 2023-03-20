@@ -5,41 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite - CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
     <title>Tangkap Pokemon</title>
-    <style>
-        body {
-            background-color: slateblue;
-            color: white;
-            font-size: 20px;
-        }
-        
-        h1{
-            margin: 50px 0 50px 0;
-            text-align: center;
-        }
-
-        .columns {
-            display: flex;
-            justify-content: space-around;
-        }
-    </style>
 </head>
 
-<body>
-    
-    <h1>Tangkap Pokemon with API</h1>
+<body class="bg-slate-900 text-white">
 
-    <div class="columns">
-        <ul id="pokemonList">
-            <h2>Pokemon</h2>
-        </ul>
+    <h1 class="text-center border-b text-3xl py-4 font-semibold">Tangkap Pokemon with API</h1>
+    <div class="container mx-auto">
 
         <ul id="Detail">
-            <h2>Detail</h2>
+        </ul>
+
+        <div class="columns">
+            <h2 class="text-3xl my-4 text-center">List Pokemon</h2>
+            <ul id="pokemonList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            </ul>
+
+        </div>
     </div>
 
 
+    <!-- My Script -->
     <script src="script.js"></script>
+    <!-- Flowbite Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
 </body>
 
 </html>
